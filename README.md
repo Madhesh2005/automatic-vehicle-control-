@@ -110,4 +110,10 @@ Paste the Arduino code.
 
 Start simulation and move the obstacle slider in the ultrasonic sensor to test automatic stopping.
 
-Do you want me to prepare that diagram for you?
+Do you want me to prepare that diagram for you? 
+
+
+
+SIMULATION: 
+https://www.tinkercad.com/things/jlWrPaS5AUW-amazing-esboo-migelo/editel?returnTo=%2Fdashboard%2Fdesigns%2Fcircuits&sharecode=X9UK3byCoFg9GS_62RYDzxYTs-ZMoY_x40Vv94UxD9Y
+
