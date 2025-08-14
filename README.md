@@ -39,10 +39,16 @@ If distance > safe limit → motors move forward.
 If distance ≤ safe limit → motors stop or reverse. 
 
 PROJECT CIRCUIT DIAGRAM:
+
+
 <img width="1366" height="544" alt="Amazing Esboo-Migelo" src="https://github.com/user-attachments/assets/34fb6d00-ac0a-4130-9580-43356b6537b4" />
 
+
 PROJECT BLOCK DIAGRAM:
+
+
 <img width="646" height="444" alt="image" src="https://github.com/user-attachments/assets/0f77f67b-a0e6-44ec-be5d-70ba3f0d06a6" />
+
 
 
 ARDUNIO CODE
