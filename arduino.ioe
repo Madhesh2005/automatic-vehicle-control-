@@ -1,0 +1,52 @@
+void setup()
+{
+  pinMode(3, OUTPUT);
+  pinMode(5, OUTPUT);
+  pinMode(6, OUTPUT);
+  pinMode(9, OUTPUT);
+  Serial.begin(9600);
+  
+}
+
+void loop()
+{
+  float Signal,distance;
+ 
+  pinMode(11,OUTPUT);
+  digitalWrite(11,0);
+  delay(2);
+  digitalWrite(11,1);
+  delay(2);
+  
+  pinMode(11,INPUT);
+  Signal=pulseIn(11,1);
+  Serial.println("\n");
+  
+  distance=(Signal*0.0343)/2;
+  Serial.println("Your distance is:");
+  Serial.println(distance);
+  Serial.println("\n\n");
+  
+  if(distance>0 && distance<10)
+  {
+  digitalWrite(3, 0);
+  analogWrite(5, 10);
+  digitalWrite(9, 0);
+  analogWrite(6, 10);    
+  }
+  else if(distance>=10 && distance<=30)
+  {
+  analogWrite(3, 80);
+  digitalWrite(5, 0);
+  analogWrite(9, 80);
+  digitalWrite(6, 0);
+  }
+  else
+  {
+  analogWrite(3, 200);
+  digitalWrite(5, 0);
+  analogWrite(9, 200);
+  digitalWrite(6, 0);
+  }  
+  delay(3000); // Wait for 1000 millisecond(s)
+}
